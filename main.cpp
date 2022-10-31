@@ -60,16 +60,20 @@ int main()
                 primes.append(to_string(m));
                 primes.append(" ");
 
-                if(!has_prime){
+                if (!has_prime)
+                {
                     has_prime = true;
                 }
             }
             m++;
         }
 
-        if(has_prime){
+        if (has_prime)
+        {
             cout << primes;
-        }else{
+        }
+        else
+        {
             cout << "Intervālā nebija pirmskaitļu";
         }
 
