@@ -24,11 +24,15 @@ def main():
 
     primes = []
 
-    while n < m:
+    while n <= m:
         if is_prime(n):
             primes.append(n)
 
         n += 1
+
+    if len(primes) == 0:
+        print("Intervālā nav pirmskaitļu")
+        return
 
     prime_str = "Pirmskaitļi:"
 
